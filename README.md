@@ -1,0 +1,2 @@
+# ssr-pagination
+基于vue的可用于服务端渲染利于SEO的分页组件，同ElementUI的分页组件功能相似，适用于nuxt和vue项目
