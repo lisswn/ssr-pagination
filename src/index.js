@@ -1,11 +1,11 @@
-import SsrPagination from './components/pager'
+import Pagination from './components/pager'
 
-SsrPagination.install = (Vue) => {
-  Vue.component('SsrPagination', SsrPagination)
+Pagination.install = (Vue) => {
+  Vue.component('Pagination', Pagination)
 }
 
 if (typeof window !== "undefined" && window.Vue) {
-  SsrPagination.install(window.Vue)
+  Pagination.install(window.Vue)
 }
 
-export default SsrPagination
+export default Pagination
