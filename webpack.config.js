@@ -2,22 +2,21 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  // entry: process.env.NODE_ENV === 'production'? './src/index.js' : './src/main.js',
-  // entry: './src/main.js', // npm run dev
-  // output: {
-  //   path: path.resolve(__dirname, './demo'),
-  //   publicPath: './demo/',
-  //   filename: 'build.js',
-  // },
-  entry: './src/index.js', // npm run build
+  entry: './src/main.js', // npm run dev
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: './',
-    filename: 'ssr-pagination.js',
-    library: 'ssr-pagination',
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    path: path.resolve(__dirname, './demo'),
+    publicPath: '/demo/',
+    filename: 'build.js',
   },
+  // entry: './src/index.js', // npm run build
+  // output: {
+  //   path: path.resolve(__dirname, './dist'),
+  //   publicPath: './',
+  //   filename: 'ssr-pagination.js',
+  //   library: 'ssr-pagination',
+  //   libraryTarget: 'umd',
+  //   umdNamedDefine: true
+  // },
   module: {
     rules: [
       {

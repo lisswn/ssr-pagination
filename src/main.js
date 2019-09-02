@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
-import SsrPagination from './index.js'
-Vue.use(SsrPagination)
+import Pagination from './index.js'
+Vue.use(Pagination)
 
 new Vue({
   el: '#app',

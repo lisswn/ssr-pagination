@@ -215,7 +215,7 @@
           :max="totalPage"
           v-model="redirectNum"
           @change="jumpPage"
-          @blur="jumpPage"
+          @blur="!confirmBtn && jumpPage"
         >
         页
       </div>

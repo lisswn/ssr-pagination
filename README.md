@@ -2,6 +2,9 @@
 
 > 基于vue的可用于服务端渲染利于SEO的分页组件，同ElementUI的分页组件功能相似，适用于nuxt和vue项目。ElementUI的分页组件功能很全，但不适用于既是服务端渲染又对seo要求高的项目。此组件对seo做了额外处理，把分页链接都暴露给爬虫，利于seo。也可在vue单页应用中使用
 
+## demo
+  [demo page](https://lisswn.github.io/ssr-pagination/)
+
 ## npm
 
 ```

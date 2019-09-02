@@ -1,7 +1,7 @@
 {
   "name": "ssr-pagination",
   "description": "基于vue的可用于服务端渲染利于SEO的分页组件，同ElementUI的分页组件功能相似，适用于nuxt和vue项目",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Lisswn <317858081@qq.com>",
   "license": "MIT",
   "private": false,
