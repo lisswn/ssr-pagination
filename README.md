@@ -1,6 +1,6 @@
 # ssr-pagination
 
-> 基于vue的可用于服务端渲染利于SEO的分页组件，同ElementUI的分页组件功能相似，适用于nuxt和vue项目
+> 基于vue的可用于服务端渲染利于SEO的分页组件，同ElementUI的分页组件功能相似，适用于nuxt和vue项目。ElementUI的分页组件功能很全，但不适用于既是服务端渲染又对seo要求高的项目。此组件对seo做了额外处理，把分页链接都暴露给爬虫，利于seo。也可在vue单页应用中使用
 
 ## npm
 
@@ -38,7 +38,7 @@
   ssr: 是否使用ssr渲染模式，默认为true，服务端渲染使用nuxt-link跳转，为false时使用span通过事件传递出去处理，为true时通过useALink传true也可以改为使用a标签跳转
   confirmBtn: 是否显示确认跳转按钮，默认不显示
   
-  如果样式不满足条件可以执行修改
+  如果样式不满足条件可以自行修改
 ```
 
 ## Build Setup

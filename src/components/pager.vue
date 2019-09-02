@@ -17,7 +17,7 @@
       </template>
       <template v-else-if="ssr && useALink">
         <a
-          :href="`${link}${linkPath}${nowPage - 1}`"
+          :href="(nowPage - 1) === 1 ? (firstLink ? firstLink : `${link}${linkPath}1`) : `${link}${linkPath}${nowPage - 1}`"
           :class="['btn btn-prev', {'disabled': nowPage === 1}]"
           v-if="currentPage > 1 || nowPage > 1"
         >上一页</a>
@@ -225,7 +225,7 @@
 </template>
 <script>
 export default {
-  name: 'SsrPagination',
+  name: 'Pagination',
   props: {
     total: { // 总条数
       type: Number,
@@ -252,7 +252,7 @@ export default {
     },
     currentPage: { // 当前页码
       type: Number,
-      default: 0
+      default: 1
     },
     pageCount: { // 总页数
       type: Number,
