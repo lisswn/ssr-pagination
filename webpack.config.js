@@ -2,13 +2,15 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js', // npm run dev
+  entry: './src/main.js', // npm run dev，本地调试时使用
   output: {
     path: path.resolve(__dirname, './demo'),
     publicPath: '/demo/',
     filename: 'build.js',
   },
-  // entry: './src/index.js', // npm run build
+
+
+  // entry: './src/index.js', // npm run build，npm发布时使用
   // output: {
   //   path: path.resolve(__dirname, './dist'),
   //   publicPath: './',
@@ -17,6 +19,7 @@ module.exports = {
   //   libraryTarget: 'umd',
   //   umdNamedDefine: true
   // },
+
   module: {
     rules: [
       {
