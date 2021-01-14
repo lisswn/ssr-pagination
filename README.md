@@ -14,9 +14,22 @@
 ## use
 
 ```
+  nuxt项目使用
+  // page.js
+  import Vue from 'vue';
   import Pagination from 'ssr-pagination'
   Vue.use(Pagination)
   
+  // nuxt.config.js
+  plugins: [
+    { src: '~/plugins/page', ssr: false }
+  ],
+  
+  vue项目使用
+  import Pagination from 'ssr-pagination'
+  Vue.use(Pagination)
+  
+  // list.vue
   <template>
     <div>
       <Pagination 
